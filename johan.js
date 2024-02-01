@@ -4,7 +4,7 @@ while True:
     report = input("أدخل البلاغ: ")
 
     # قم بتعديل الرابط إلى مستضيف بلاغ الخاص بك
-    url = 'https://example.com/submit_report'
+    url = 'https://www.whatsapp.com/contact/?subject=messenger'
 
     # إرسال البلاغ إلى المستضيف
     response = requests.post(url, data={'report': report})
