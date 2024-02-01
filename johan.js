@@ -1,16 +1,27 @@
 import requests
+import logging
+from pyfiglet import Figlet
+
+# تكوين تسجيل
+logging.basicConfig(filename='report_tool.log', level=logging.INFO)
+
+# إعداد شعار باستخدام pyfiglet
+f = Figlet(font='slant')
+logo = f.renderText('البلاغ')
+print(logo)
 
 while True:
     report = input("أدخل البلاغ: ")
 
-    # قم بتعديل الرابط إلى مستضيف بلاغ الخاص بك
     url = 'https://www.whatsapp.com/contact/?subject=messenger'
 
-    # إرسال البلاغ إلى المستضيف
     response = requests.post(url, data={'report': report})
 
-    # التحقق من نجاح الإرسال
     if response.status_code == 200:
         print("تم إرسال البلاغ بنجاح.")
+        # سجل النجاح
+        logging.info(f'تم إرسال البلاغ: {report}')
     else:
         print("حدث خطأ أثناء إرسال البلاغ. يرجى المحاولة مرة أخرى.")
+        # سجل الخطأ
+        logging.error(f'حدث خطأ أثناء إرسال البلاغ: {report}')
