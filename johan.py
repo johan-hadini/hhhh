@@ -7,7 +7,7 @@ logging.basicConfig(filename='report_tool.log', level=logging.INFO)
 
 # إعداد شعار باستخدام pyfiglet
 f = Figlet(font='slant')
-logo = f.renderText('البلاغ')
+logo = f.renderText('DARKNET')
 print(logo)
 
 while True:
