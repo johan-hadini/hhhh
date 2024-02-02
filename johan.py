@@ -13,7 +13,7 @@ print(logo)
 while True:
     report = input("أدخل البلاغ: ")
 
-    url = 'https://www.whatsapp.com/contact/?subject=messenger'
+    url = 'https://api.whatsapp.com/send?phone=+201092358688'
 
     response = requests.post(url, data={'report': report})
 
