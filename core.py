@@ -1,3 +1,4 @@
 # core.py
 class HackingTool:
-    # ... تعريف الكلاس هنا
+    # تعريف الكلاس هنا
+    pass
