@@ -22,6 +22,9 @@ class ddos(HackingTool):
         multiple = input(" Enter Multiple >> ")
         timer = input(" Enter Timer >> ")
 
+        # تعريف المتغير socks_type541 بقيمة مناسبة
+        socks_type541 = "some_value"
+
         subprocess.run(["sudo", "python3", "ddos", method, url, socks_type541, threads, proxylist, multiple, timer])
 
 # يمكنك أيضًا إضافة التشغيل الرئيسي هنا
