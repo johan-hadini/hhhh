@@ -1,4 +1,9 @@
+class HackingTool:
+    # ... تعريف الكلاس هنا
+
 class ddos(HackingTool):
+    # ... تعريف ddos هنا
+
     TITLE = "ddos"
     DESCRIPTION = "Best DDoS Attack Script With 36 Plus Methods." \
                   "DDoS attacks\n\b " \
